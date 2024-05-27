@@ -1,0 +1,291 @@
+body, html {
+    margin: 0;
+    padding: 0;
+    font-family: sans-serif;
+    color: #ffffff;
+    background: #000;
+}
+
+.parentt {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    max-width: 100%;
+    background-image: linear-gradient(rgba(0,0,0,0.7),rgba(0,0,0,0.7)),url(netflixbg.png);
+    background-size: auto;
+    width:100%;
+    height: 90vh;
+}
+
+.navbar {
+    width: 100%;
+    display: flex;
+    align-items: center;
+    padding: 20px 50px;
+}
+
+.logo {
+    width: 180px;
+    height: 150px;
+    margin-left: 3em;
+    margin-right: 58em;
+}
+
+.sign-in {
+    margin-right: 3em;
+}
+
+.navbar button {
+    color: #ffffff;
+    border: none;
+    padding: 10px 20px;
+    cursor: pointer;
+    font-size: 16px;
+    border-radius: 5px;
+    flex-direction: column;
+}
+
+.lang button {
+    background-color: transparent;
+    border: 1px solid #ffffff;
+    font-size: 16px; 
+    margin-left: 20px;
+    
+}
+
+
+.sign-in button {
+    background-color: red;
+    color: white;
+    border: none;
+    font-size: 16px;
+    padding: 10px 20px; 
+    cursor: pointer;
+    border-radius: 5px; 
+    margin-left: 20px;
+}
+
+.sign-in button:hover {
+    background-color: #f40612;
+}
+
+.main-content {
+    margin: 50px 0;
+    font-size: large;
+    margin-top: 4%;
+    margin-bottom: 1.5%;
+}
+
+.main-content h1 {
+    font-size: 3em;
+    margin-bottom: 60px;
+}
+
+.main-content p {
+    font-size: 1.5em;
+    margin-bottom: 30px;
+}
+
+.email-content {
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    margin-bottom: 5%;
+}
+
+.email-content form {
+    display: flex;
+    width: 40%;
+}
+
+.email-content input {
+    flex: 1;
+    padding: 15px;
+    background-color: transparent;
+    color: #ffffff;
+    font-size: 1em;
+    margin-right: 20px;
+    border: 1px solid #ffffff;
+    border-radius: 4px;
+    box-sizing: border-box;
+}
+
+.email-content button {
+    background-color: #e50914;
+    color: #ffffff;
+    border: none;
+    padding: 15px ;
+    cursor: pointer;
+    font-size: 1em;
+    flex: 1;
+    margin-left: 0;
+    border-radius: 4px;
+    box-sizing: border-box; 
+}
+
+.email-content button:hover {
+    background-color: #f40612;
+}
+
+.email-content input[type="email"]:focus {
+    outline: none;
+}
+
+.parentt img {
+    margin-top: 0px;
+    max-width: 100%;
+    max-height: 100%;
+    height: 90%;
+}
+
+.feature {
+    padding: 50px 12%;
+    font-size: 22px;
+}
+
+.row {
+    display: flex;
+    width: 100%;
+    align-items: center;
+    flex-wrap: wrap;
+    padding: 50px 0;
+}
+
+.text {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.imgs {
+    flex-basis: 50%;
+    margin-bottom: 20px;
+}
+
+.imgs img {
+    display: block;
+    width: 90%;
+    margin: auto;
+}
+
+.feature h2 {
+    font-size: 50px;
+    font-weight: 600;
+    margin-bottom: 20px;
+}
+
+.grey-line {
+    height: 8px; 
+    background-color: rgb(40, 40, 40);
+    width: 100%;
+}
+
+.faq {
+    padding: 10px 12%;
+    text-align: center;
+    font-size: 18px;
+}
+
+.faq h2 {
+    font-weight: 500;
+    font-size: 45px;
+}
+
+.list {
+    margin: 60px auto;
+    width: 100%;
+    max-width: 1250px;
+}
+
+.list li {
+    list-style: none;
+    width: 100%;
+    padding: 5px;
+}
+
+.list li label {
+    display: flex;
+    align-items: center;
+    padding: 30px;
+    font-size: 22px;
+    font-weight: 500;
+    background: #303030;
+    margin-bottom: 2px;
+    cursor: pointer;
+    position: relative;
+}
+
+.list li label:hover{
+    background: #404040;
+}
+label::after {
+    content: '+';
+    font-size: 34px;
+    position: absolute;
+    right: 20px;
+    transition: transform 0.3s;
+}
+
+input[type="radio"] {
+    display: none;
+}
+
+.list .content {
+    background: #303030;
+    font-size: 22px;
+    text-align: left ;
+    padding: 0 20px;
+    max-height: 0;
+    overflow: hidden;
+    transition: max-height 0.3s, padding 0.3s;
+}
+
+.list input[type="radio"]:checked + label + .content {
+    max-height: 600px;
+    padding: 30px 20px;
+}
+
+.list input[type="radio"]:checked + label::after {
+    transform: rotate(135deg);
+}
+
+.faq small {
+    font-size: 22px;
+}
+
+.footer {
+    display: flex;
+    justify-content: space-between;
+    border-top: 8px rgb(40, 40, 40);
+    margin-left: 160px;
+    margin-top: 5%;
+    margin-bottom: 1%;
+}
+
+.footer .col {
+    flex: 2;
+}
+
+.footer .col a {
+    display: block;
+    color: #e6e6e6;
+    margin: 15px 0;
+    text-decoration: none;
+    font-size: 14px;
+}
+
+.btn button {
+    color: #ffffff;
+    padding: 5px 10px;
+    cursor: pointer;
+    font-size: 12px;
+    border-radius: 3px;
+    flex-direction: column;
+    margin-left: 160px;
+    margin-bottom: 1%;
+}
+
+.net p{
+    margin-left: 160px;
+    margin-bottom: 5%;
+} 
